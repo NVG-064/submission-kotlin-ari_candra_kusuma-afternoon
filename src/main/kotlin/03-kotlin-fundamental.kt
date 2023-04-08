@@ -109,7 +109,7 @@ fun elvisOperators() {
 }
 
 fun plusStringTemplate(name: String) {
-  println("Hello, I'm " + name + ". Also known as NVG-64\n")
+  println("Hello, I'm " + name + ". Also known as NVG-064\n")
 }
 
 fun dollarStringTemplate(name: String) {
