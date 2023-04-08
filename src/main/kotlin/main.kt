@@ -2,7 +2,11 @@ import kotlin.system.exitProcess
 
 fun main(args: Array<String>) {
   // Initialize some data for example
-  var variable03 = "Ari Candra Kusuma"
+  val variable03 = "Ari Candra Kusuma"
+  val char03 = 'G'
+  val numberX03 = 16
+  val numberY03 = 4
+  val name03 = "nVg-064"
 
   // Simulate clear screen by print lines
   // Because there's no way to interact clear lines on IntelliJ IDEA
@@ -33,6 +37,74 @@ fun main(args: Array<String>) {
               unchangeableVariable(variable03)
               getchImitation()
             }
+            "2" -> {
+              clearScreen()
+              println("\t\t(3.2) Data Types")
+              println("==================================")
+              println("(a)\tCharacter\n")
+              charDataType(char03)
+              println("(b)\tString\n")
+              stringDataType(variable03)
+              println("(c)\tBoolean\n")
+              booleanDataType(numberX03, numberY03)
+              println("(d)\tNumeric\n")
+              numericDataType()
+              println("(e)\tArray\n")
+              arrayDataType()
+              getchImitation()
+            }
+            "3" -> {
+              clearScreen()
+              println("\t\t(3.3) Functions")
+              println("==================================")
+              println("(a)\tReturnable Function\n")
+              functions()
+              getchImitation()
+            }
+            "4" -> {
+              clearScreen()
+              println("\t\t(3.4) If Expressions")
+              println("==================================")
+              println("(a)\tIf Else (with ignore case)\n")
+              ifElseExpressions(name03)
+              getchImitation()
+            }
+            "5" -> {
+              clearScreen()
+              println("\t\t(3.5) Nullable Types")
+              println("==================================")
+              println("(a)\tNullable variable\n")
+              nullableVariable(variable03)
+              println("(b)\tAvoid Nullable Variable With If\n")
+              avoidNullableWithIf()
+              getchImitation()
+            }
+            "6" -> {
+              clearScreen()
+              println("\t\t(3.6) Safe Calls")
+              println("==================================")
+              println("(a)\tUsing safe calls with ?. sign\n")
+              safeCalls()
+              getchImitation()
+            }
+            "7" -> {
+              clearScreen()
+              println("\t\t(3.7) Elvis Operators")
+              println("==================================")
+              println("(a)\tUsing elvis operator to avoid null output\n")
+              elvisOperators()
+              getchImitation()
+            }
+            "8" -> {
+              clearScreen()
+              println("\t\t(3.8) String Templates")
+              println("==================================")
+              println("(a)\tString templates using plus (+) sign\n")
+              plusStringTemplate(variable03)
+              println("(b)\tString templates using dollar ($) sign\n")
+              dollarStringTemplate(variable03)
+              getchImitation()
+            }
           }
         }
       }
@@ -60,7 +132,7 @@ fun homepage() {
 }
 
 fun pageKotlinFundamental() {
-  println("\t\tKotlin Fundamental")
+  println("\t\t(3) Kotlin Fundamental")
   println("==================================")
   println("(1)\tVariables")
   println("(2)\tData Types")
