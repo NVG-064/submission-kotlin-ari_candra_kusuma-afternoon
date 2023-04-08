@@ -178,7 +178,22 @@ fun main(args: Array<String>) {
       }
 
       "5" -> {
+        while (true) {
+          clearScreen()
+          pageKotlinCollection()
 
+          when (readlnOrNull() ?: "999") {
+            "0" -> break
+            "1" -> {
+              clearScreen()
+              println("\t\t(5.) ")
+              println("==================================")
+              println("(a)\tx\n")
+              // some functions
+              getchImitation()
+            }
+          }
+        }
       }
     }
   }
@@ -219,7 +234,7 @@ fun pageKotlinFundamental() {
 }
 
 fun pageKotlinControlFlow() {
-  println("\t\t(4) Kotlin Fundamental")
+  println("\t\t(4) Kotlin Control Flow")
   println("==================================")
   println("(1)\tExpressions & Statements")
   println("(2)\tWhen Expressions")
@@ -228,6 +243,17 @@ fun pageKotlinControlFlow() {
   println("(5)\tWhile Loop")
   println("(6)\tBreak")
   println("(7)\tContinue")
+  println("(0)\tReturn to Homepage\n")
+  print("Select: ")
+}
+
+fun pageKotlinCollection() {
+  println("\t\t(5) Kotlin Collection")
+  println("==================================")
+  println("(1)\tList")
+  println("(2)\tSet")
+  println("(3)\tMap")
+  println("(4)\tCollection Functions")
   println("(0)\tReturn to Homepage\n")
   print("Select: ")
 }
