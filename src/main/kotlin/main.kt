@@ -8,7 +8,7 @@ fun main(args: Array<String>) {
   // Infinite loop reference:
   // https://stackoverflow.com/questions/65266730/infinite-loop-in-kotlin-using-for-loop
   while (true) {
-    for (i in 1..50) print("\r\n")
+    clearScreen()
     homepage()
     print("Select: ")
 
@@ -16,7 +16,7 @@ fun main(args: Array<String>) {
       "0" -> exitProcess(0) // Reference: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.system/exit-process.html
       "1" -> {
         while (true) {
-          for (i in 1..50) print("\r\n")
+          clearScreen()
           pageKotlinFundamental()
           print("Select: ")
 
@@ -27,6 +27,10 @@ fun main(args: Array<String>) {
       }
     }
   }
+}
+
+fun clearScreen() {
+  for (i in 1..50) print("\r\n")
 }
 
 fun homepage() {
