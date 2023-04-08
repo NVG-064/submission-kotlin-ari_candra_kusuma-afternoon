@@ -14,6 +14,17 @@ fun main(args: Array<String>) {
 
     when (readlnOrNull() ?: "999") {
       "0" -> exitProcess(0) // Reference: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.system/exit-process.html
+      "1" -> {
+        while (true) {
+          for (i in 1..50) print("\r\n")
+          pageKotlinFundamental()
+          print("Select: ")
+
+          when (readlnOrNull() ?: "999") {
+            "0" -> break
+          }
+        }
+      }
     }
   }
 }
@@ -38,5 +49,5 @@ fun pageKotlinFundamental() {
   println("(6)\tSafe Calls")
   println("(7)\tElvis Operators")
   println("(8)\tString Templates\n")
-  println("(0)\tExit\n")
+  println("(0)\tReturn to Homepage\n")
 }
