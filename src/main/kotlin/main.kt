@@ -7,6 +7,7 @@ fun main(args: Array<String>) {
   val numberX03 = 16
   val numberY03 = 4
   val name03 = "nVg-064"
+  val nullableName04: String? = "NVG-064"
 
   // Simulate clear screen by print lines
   // Because there's no way to interact clear lines on IntelliJ IDEA
@@ -108,6 +109,77 @@ fun main(args: Array<String>) {
           }
         }
       }
+
+      "4" -> {
+        while (true) {
+          clearScreen()
+          pageKotlinControlFlow()
+
+          when (readlnOrNull() ?: "999") {
+            "0" -> break
+            "1" -> {
+              clearScreen()
+              println("\t\t(4.) ")
+              println("==================================")
+              println("(a)\tx\n")
+              // some functions
+              getchImitation()
+            }
+            "2" -> {
+              clearScreen()
+              println("\t\t(4.) ")
+              println("==================================")
+              println("(a)\tx\n")
+              // some functions
+              getchImitation()
+            }
+            "3" -> {
+              clearScreen()
+              println("\t\t(4.) ")
+              println("==================================")
+              println("(a)\tx\n")
+              // some functions
+              getchImitation()
+            }
+            "4" -> {
+              clearScreen()
+              println("\t\t(4.) ")
+              println("==================================")
+              println("(a)\tx\n")
+              // some functions
+              getchImitation()
+            }
+            "5" -> {
+              clearScreen()
+              println("\t\t(4.) ")
+              println("==================================")
+              println("(a)\tx\n")
+              // some functions
+              getchImitation()
+            }
+            "6" -> {
+              clearScreen()
+              println("\t\t(4.) ")
+              println("==================================")
+              println("(a)\tx\n")
+              // some functions
+              getchImitation()
+            }
+            "7" -> {
+              clearScreen()
+              println("\t\t(4.) ")
+              println("==================================")
+              println("(a)\tx\n")
+              // some functions
+              getchImitation()
+            }
+          }
+        }
+      }
+
+      "5" -> {
+
+      }
     }
   }
 }
@@ -142,6 +214,20 @@ fun pageKotlinFundamental() {
   println("(6)\tSafe Calls")
   println("(7)\tElvis Operators")
   println("(8)\tString Templates\n")
+  println("(0)\tReturn to Homepage\n")
+  print("Select: ")
+}
+
+fun pageKotlinControlFlow() {
+  println("\t\t(4) Kotlin Fundamental")
+  println("==================================")
+  println("(1)\tExpressions & Statements")
+  println("(2)\tWhen Expressions")
+  println("(3)\tRange")
+  println("(4)\tFor Loop")
+  println("(5)\tWhile Loop")
+  println("(6)\tBreak")
+  println("(7)\tContinue")
   println("(0)\tReturn to Homepage\n")
   print("Select: ")
 }
