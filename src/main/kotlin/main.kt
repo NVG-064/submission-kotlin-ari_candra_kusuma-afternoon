@@ -119,7 +119,7 @@ fun main(args: Array<String>) {
             "0" -> break
             "1" -> {
               clearScreen()
-              println("\t\t(4.) ")
+              println("\t\t(4.1) Expressions & Statements")
               println("==================================")
               println("(a)\tx\n")
               // some functions
@@ -127,7 +127,7 @@ fun main(args: Array<String>) {
             }
             "2" -> {
               clearScreen()
-              println("\t\t(4.) ")
+              println("\t\t(4.2) When Expressions")
               println("==================================")
               println("(a)\tx\n")
               // some functions
@@ -135,7 +135,7 @@ fun main(args: Array<String>) {
             }
             "3" -> {
               clearScreen()
-              println("\t\t(4.) ")
+              println("\t\t(4.3) Range")
               println("==================================")
               println("(a)\tx\n")
               // some functions
@@ -143,7 +143,7 @@ fun main(args: Array<String>) {
             }
             "4" -> {
               clearScreen()
-              println("\t\t(4.) ")
+              println("\t\t(4.4) For Loop")
               println("==================================")
               println("(a)\tx\n")
               // some functions
@@ -151,7 +151,7 @@ fun main(args: Array<String>) {
             }
             "5" -> {
               clearScreen()
-              println("\t\t(4.) ")
+              println("\t\t(4.5) While Loop")
               println("==================================")
               println("(a)\tx\n")
               // some functions
@@ -159,7 +159,7 @@ fun main(args: Array<String>) {
             }
             "6" -> {
               clearScreen()
-              println("\t\t(4.) ")
+              println("\t\t(4.6) Break")
               println("==================================")
               println("(a)\tx\n")
               // some functions
@@ -167,7 +167,7 @@ fun main(args: Array<String>) {
             }
             "7" -> {
               clearScreen()
-              println("\t\t(4.) ")
+              println("\t\t(4.7) Continue")
               println("==================================")
               println("(a)\tx\n")
               // some functions
@@ -186,7 +186,31 @@ fun main(args: Array<String>) {
             "0" -> break
             "1" -> {
               clearScreen()
-              println("\t\t(5.) ")
+              println("\t\t(5.1) List")
+              println("==================================")
+              println("(a)\tx\n")
+              // some functions
+              getchImitation()
+            }
+            "2" -> {
+              clearScreen()
+              println("\t\t(5.2) Set")
+              println("==================================")
+              println("(a)\tx\n")
+              // some functions
+              getchImitation()
+            }
+            "3" -> {
+              clearScreen()
+              println("\t\t(5.3) Map")
+              println("==================================")
+              println("(a)\tx\n")
+              // some functions
+              getchImitation()
+            }
+            "4" -> {
+              clearScreen()
+              println("\t\t(5.4) Collection Functions")
               println("==================================")
               println("(a)\tx\n")
               // some functions
@@ -242,7 +266,7 @@ fun pageKotlinControlFlow() {
   println("(4)\tFor Loop")
   println("(5)\tWhile Loop")
   println("(6)\tBreak")
-  println("(7)\tContinue")
+  println("(7)\tContinue\n")
   println("(0)\tReturn to Homepage\n")
   print("Select: ")
 }
@@ -253,7 +277,7 @@ fun pageKotlinCollection() {
   println("(1)\tList")
   println("(2)\tSet")
   println("(3)\tMap")
-  println("(4)\tCollection Functions")
+  println("(4)\tCollection Functions\n")
   println("(0)\tReturn to Homepage\n")
   print("Select: ")
 }
