@@ -12,9 +12,7 @@ fun main(args: Array<String>) {
     homepage()
     print("Select: ")
 
-    var userInput = readlnOrNull() ?: "999"
-
-    when (userInput) {
+    when (readlnOrNull() ?: "999") {
       "0" -> exitProcess(0) // Reference: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.system/exit-process.html
     }
   }
@@ -26,9 +24,19 @@ fun homepage() {
   println("(1)\tKotlin Fundamental")
   println("(2)\tKotlin Control Flow")
   println("(3)\tKotlin Collection\n")
-  println("(0)\tExit")
+  println("(0)\tExit\n")
 }
 
 fun pageKotlinFundamental() {
-
+  println("\t\tKotlin Fundamental")
+  println("============================")
+  println("(1)\tVariables")
+  println("(2)\tData Types")
+  println("(3)\tFunctions")
+  println("(4)\tIf Expressions")
+  println("(5)\tNullable Types")
+  println("(6)\tSafe Calls")
+  println("(7)\tElvis Operators")
+  println("(8)\tString Templates\n")
+  println("(0)\tExit\n")
 }
