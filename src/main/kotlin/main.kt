@@ -9,6 +9,15 @@ fun main(args: Array<String>) {
   val name03 = "nVg-064"
   val nullableName04: String? = "NVG-064"
   val time04 = 23
+  val dataCollection05: Array<Int> = arrayOf(10, 9, 8, 7, 6, 5, 4, 3, 2, 1)
+  val dataX05: Array<Any> = arrayOf("Simon \"Ghost\" Riley", "Soap MacTavish", "Price", "Task Force", 141, "Gaz", "Roach", "Shepherd") // no Any keyword will throw error
+  val dataY05: Array<Any> = arrayOf("Simon \"Ghost\" Riley", "Soap MacTavish", "Price", "Gaz", "Phillip Graves")
+  val ghostIdentity: Map<Any, Any> = mapOf(
+    "firstName" to "Simon",
+    "lastName" to "Riley",
+    "callsign" to "Ghost",
+    "assignedOn" to "MwReboot"
+  )
 
   // Simulate clear screen by print lines
   // Because there's no way to interact clear lines on IntelliJ IDEA
@@ -197,32 +206,50 @@ fun main(args: Array<String>) {
               clearScreen()
               println("\t\t(5.1) List")
               println("==================================")
-              println("(a)\tx\n")
-              // some functions
+              println("(a)\tImmutable List\n")
+              immutableList(dataX05)
+              println("(b)\tMutable List\n")
+              mutableList(dataX05)
               getchImitation()
             }
             "2" -> {
               clearScreen()
               println("\t\t(5.2) Set")
               println("==================================")
-              println("(a)\tx\n")
-              // some functions
+              println("(a)\tImmutable Set\n")
+              immutableSet(dataX05, dataY05)
+              println("(b)\tMutable Set\n")
+              mutableSet(dataX05)
               getchImitation()
             }
             "3" -> {
               clearScreen()
               println("\t\t(5.3) Map")
               println("==================================")
-              println("(a)\tx\n")
-              // some functions
+              println("(a)\tImmutable Map\n")
+              immutableMap(ghostIdentity)
+              println("(b)\tMutable Map\n")
+              mutableMap(ghostIdentity)
               getchImitation()
             }
             "4" -> {
               clearScreen()
               println("\t\t(5.4) Collection Functions")
               println("==================================")
-              println("(a)\tx\n")
-              // some functions
+              println("(a)\tFilter collection\n")
+              filterCollection(dataCollection05)
+              println("(b)\tMap collection\n")
+              mapCollection(dataCollection05)
+              println("(c)\tCount collection\n")
+              countCollection(dataCollection05)
+              println("(d)\tFind collection\n")
+              findCollection(dataCollection05)
+              println("(e)\tPosition collection\n")
+              positionCollection(dataCollection05)
+              println("(f)\tStatistic collection\n")
+              statisticCollection(dataCollection05)
+              println("(g)\tSort collection\n")
+              sortCollection(dataCollection05)
               getchImitation()
             }
           }
