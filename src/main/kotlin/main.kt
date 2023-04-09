@@ -8,6 +8,7 @@ fun main(args: Array<String>) {
   val numberY03 = 4
   val name03 = "nVg-064"
   val nullableName04: String? = "NVG-064"
+  val time04 = 23
 
   // Simulate clear screen by print lines
   // Because there's no way to interact clear lines on IntelliJ IDEA
@@ -121,56 +122,64 @@ fun main(args: Array<String>) {
               clearScreen()
               println("\t\t(4.1) Expressions & Statements")
               println("==================================")
-              println("(a)\tx\n")
-              // some functions
+              println("(a)\tIf Else expression\n")
+              ifElseExpression(nullableName04)
               getchImitation()
             }
             "2" -> {
               clearScreen()
               println("\t\t(4.2) When Expressions")
               println("==================================")
-              println("(a)\tx\n")
-              // some functions
+              println("(a)\tWhen expression with single and multiple condition\n")
+              whenExpression(time04)
               getchImitation()
             }
             "3" -> {
               clearScreen()
               println("\t\t(4.3) Range")
               println("==================================")
-              println("(a)\tx\n")
-              // some functions
+              println("(a)\tRange using double dot (..)\n")
+              rangeUsingDoubleDot()
+              println("(b)\tRange using rangeTo()\n")
+              rangeUsingRangeTo()
+              println("(c)\tRange using downTo() with step\n")
+              rangeUsingDownTo()
               getchImitation()
             }
             "4" -> {
               clearScreen()
               println("\t\t(4.4) For Loop")
               println("==================================")
-              println("(a)\tx\n")
-              // some functions
+              println("(a)\tFor In with index\n")
+              forInWithIndex()
+              println("(b)\tFor Each with index\n")
+              forEachWithIndex()
               getchImitation()
             }
             "5" -> {
               clearScreen()
               println("\t\t(4.5) While Loop")
               println("==================================")
-              println("(a)\tx\n")
-              // some functions
+              println("(a)\tWhile loop\n")
+              whileLoop()
+              println("(b)\tDo While loop\n")
+              doWhileLoop()
               getchImitation()
             }
             "6" -> {
               clearScreen()
               println("\t\t(4.6) Break")
               println("==================================")
-              println("(a)\tx\n")
-              // some functions
+              println("(a)\tBreak keyword in loop\n")
+              breakInLoop()
               getchImitation()
             }
             "7" -> {
               clearScreen()
               println("\t\t(4.7) Continue")
               println("==================================")
-              println("(a)\tx\n")
-              // some functions
+              println("(a)\tContinue keyword in loop\n")
+              continueInLoop()
               getchImitation()
             }
           }
